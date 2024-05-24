@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop 1</title>
+    <link rel="stylesheet" href="../laptop.css">
+</head>
+<body>
+    <header>
+        <a href="../trangchu.html">
+            <img src="../../images/Logo.png" alt="logo">
+        </a>
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Nhập từ khóa...">
+            <button class="search-button">Tìm kiếm</button>
+        </div>
+        <div class="login-container">
+            <button onclick="openModal()">
+                <img src="../../images/Login.jpg" alt="Login Icon">
+                Đăng Nhập
+            </button>
+        </div>
+    </header>
+    <!-- Thanh điều hướng -->
+    <nav>
+        <div class="dropdown">
+            <a href="#">DANH MỤC SẢN PHẨM</a>
+            <div class="dropdown-content">
+                <a href="./Laptop.html">Laptop</a>
+                <a href="#">Máy tính</a>
+                <a href="#">Phụ kiện máy tính</a>
+            </div>
+        </div>
+        <a href="#">CHĂM SÓC KHÁCH HÀNG</a>
+        <a href="#">LIÊN HỆ</a>
+        <a href="../gioHang.html">GIỎ HÀNG</a>
+    </nav>
+
+    <!-- Nút đăng nhập -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+             <!-- Đăng Nhập -->
+            <div class="form-section">
+                <h1>Đăng Nhập</h1>
+                <form>
+                    <label for="login-username">Tên tài khoản hoặc địa chỉ email*</label>
+                    <input type="text" id="login-username" name="login-username" required>
+                    
+                    <label for="login-password">Mật khẩu*</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                        
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="remember-me" name="remember-me">
+                        <label for="remember-me">Ghi nhớ mật khẩu</label>
+                    </div>
+                        
+                    <input type="submit" value="Đăng Nhập">
+                    <a href="#" class="forgot-password">Quên mật khẩu?</a>
+                </form>
+            </div>
+                
+            <!-- Đăng Ký -->
+            <div class="form-section">
+                <h1>Đăng Ký</h1>
+                <form>
+                    <label for="register-email">Địa chỉ email*</label>
+                    <input type="email" id="register-email" name="register-email" required>
+                        
+                    <label for="register-password">Mật khẩu*</label>
+                    <input type="password" id="register-password" name="register-password" required>
+                        
+                    <input type="submit" value="Đăng Ký">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../dangnhap.js"></script>
+
+<section class="product-detail">
+    <!-- Hình ảnh sản phẩm -->
+    <div class="product">
+        <h1>Laptop Lenovo IdeaPad Pro 5 16IMH9 83D4001JVN (Intel® Core™ Ultra 7 155H | 16GB | 512GB | RTX 3050 | 16.0inch 2K OLED 120Hz | Win 11 | Xám)</h1>
+        <p>Lượt xem: <span id="visit-count">0</span></p>
+        <script src="./luotxem3.js"></script>
+
+        <div class="Laptop">
+            <div class="slideshow-container">
+                <div class="Slides">
+                    <div class="slide fade">
+                        <img src="../../images/Laptop 3/laptop3.jpg" alt="Góc 1">
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="../../images/Laptop 3/Goc1.jpg" alt="Góc 2">
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="../../images/Laptop 3/Goc2.jpg" alt="Góc 3">
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="../../images/Laptop 3/Goc3.jpg" alt="Góc 4">
+                    </div>
+                </div>
+            <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlides(1)">&#10095;</a>    
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+        <script src="../slides.js"></script>
+    </div>
+
+    <!-- Thông tin sản phẩm -->
+    <div class="detail">
+        <div class="price">
+            <p class="old-price">Giá chính hãng : <span class="original-price">34.990.000 VNĐ</span></p>
+            <p class="new-price">Giá khuyến mãi : 31.990.000 VNĐ</p>
+        </div>
+        <div class="info">
+            <p>
+                -CPU: Intel® Core™ Ultra 7 155H (1.40GHz up to 4.80GHz, 24MB Cache)
+                <br>
+                -Ram: 16GB Soldered LPDDR5x-7467MHz
+                <br>
+                -Ổ cứng: 512GB SSD M.2 2242 PCIe® 4.0x4 NVMe®
+                <br>
+                -VGA: NVIDIA® GeForce RTX™ 3050 6GB GDDR6
+                <br>
+                -Display: 16.0inch 2K (2048x1280) OLED, 400nits, Glossy, 100% DCI-P3, 120Hz, Eyesafe®, DisplayHDR™ True Black 500
+                <br>
+                -Pin: 4Cell 84WHrs
+                <br>
+                -Weight: 1.91 kg
+                <br>
+                -Color: Arctic Grey (Xám)
+                <br>
+                -OS: Windows 11 Home Single Language bản quyền
+                <br>
+                -NPP: PSD
+            </p>
+            <p><b>Bảo hành: </b>24 Tháng chính hãng Lenovo Việt Nam</p>
+        </div>
+        <button onclick="addToCart('Laptop Lenovo IdeaPad Pro 5 16IMH9 83D4001JVN', 31990000)" class="cart">
+            <img src="../../images/Giỏ hàng.png" alt="">
+            Đặt hàng
+        </button>
+        <script src="../gioHang.js"></script>
+    </div>
+</section>
+<footer class="footer">
+    <h3>Liên hệ:</h3>
+    <p>Số điện thoại: 0969707708  ||  Email: habengialoc@gmail.com  ||  <a href="#"><img src="../../images/Facebook.png" alt="facebook logo" width="2%" height="2%"></a></p> 
+</footer>
+</body>
+</html>

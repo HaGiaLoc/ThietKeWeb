@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./all-laptop.css">
+</head>
+<body>
+    <header>
+        <!-- Logo trang web -->
+        <a href="trangchu.html">
+            <img src="../images/Logo.png" alt="logo">
+        </a>
+
+        <!-- Thanh tìm kiếm -->
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Nhập từ khóa...">
+            <button class="search-button">Tìm kiếm</button>
+        </div>
+        
+        <!-- Nút đăng nhập -->
+        <div class="login-container">
+            <button onclick="openModal()">
+                <img src="../images/Login.jpg" alt="Login Icon">
+                Đăng Nhập
+            </button>
+        </div>
+
+        <!-- Form đăng nhập -->
+        <div id="login-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+
+                <!-- Đăng Nhập -->
+                <div class="form-section">
+                    <h1>Đăng Nhập</h1>
+                    <form>
+                        <label for="login-username">Tên tài khoản hoặc địa chỉ email*</label>
+                        <input type="text" id="login-username" name="login-username" required>
+                        
+                        <label for="login-password">Mật khẩu*</label>
+                        <input type="password" id="login-password" name="login-password" required>
+                            
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="remember-me" name="remember-me">
+                            <label for="remember-me">Ghi nhớ mật khẩu</label>
+                        </div>
+                            
+                        <input type="submit" value="Đăng Nhập">
+                        <a href="#" class="forgot-password">Quên mật khẩu?</a>
+                    </form>
+                </div>
+                    
+                <!-- Đăng Ký -->
+                <div class="form-section">
+                    <h1>Đăng Ký</h1>
+                    <form>
+                        <label for="register-email">Địa chỉ email*</label>
+                        <input type="email" id="register-email" name="register-email" required>
+                            
+                        <label for="register-password">Mật khẩu*</label>
+                        <input type="password" id="register-password" name="register-password" required>
+                            
+                        <input type="submit" value="Đăng Ký">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="./dangnhap.js"></script>
+    </header>
+
+    <!-- Thanh điều hướng -->
+    <nav>
+        <div class="dropdown">
+            <a href="#">DANH MỤC SẢN PHẨM</a>
+            <div class="dropdown-content">
+                <a href="./Laptop.html">Laptop</a>
+                <a href="#">Máy tính</a>
+                <a href="#">Phụ kiện</a>
+            </div>
+        </div>
+        <a href="#">CHĂM SÓC KHÁCH HÀNG</a>
+        <a href="#">LIÊN HỆ</a>
+        <a href="#">GIỎ HÀNG</a>
+    </nav>
+
+    <section>
+        <div class="all-product">
+            <a href="./laptop1/laptop1.html" class="image-item"><img src="../images/Laptop/laptop1.jpg" alt="Laptop 1">Laptop Lenovo Ideapad Slim 5 16IMH9 83DC001SVN (Intel&copy; Core&trade; Ultra 7 155H | 32GB | 512GB | Intel&reg; Arc&trade; Graphics | 16 inch QHD OLED 120hz | Win 11 | Xám)</a>
+            <a href="./laptop2/laptop2.html" class="image-item"><img src="../images/Laptop/laptop2.jpg" alt="Laptop 2">Laptop Lenovo Ideapad Pro 5 (Core i5-13500H, Ram 16GB, 1TB SSD, RTX 3050, 16inch 2.5K 120Hz)</a>
+            <a href="./laptop2/laptop3.html" class="image-item"><img src="../images/Laptop/laptop3.jpg" alt="Laptop 3">Laptop Lenovo IdeaPad Pro 5 16IMH9 83D4001JVN (Intel&reg; Core&trade; Ultra 7 155H | 16GB | 512GB | RTX 3050 | 16.0inch 2K OLED 120Hz | Win 11 | Xám)</a>
+            <a href="./laptop2/laptop4.html" class="image-item"><img src="../images/Laptop/laptop4.jpg" alt="Laptop 4">Laptop Acer Swift X SFX14-71G-78SY NX.KEVSV.006 (Core&trade; i7-13700H | 32GB | 1TB | RTX 4050 | 14.5 inch 2.8K OLED 120Hz | Win 11 | Xám)</a>
+            <a href="./laptop2/laptop5.html" class="image-item"><img src="../images/Laptop/laptop5.jpg" alt="Laptop 5">Laptop Asus Vivobook 14X OLED K3405ZF-KM184W (Core&trade; i5-12500H | 16GB | 512GB | RTX&trade; 2050 | 14inch 2.8K OLED | Win 11 | Bạc)</a>
+            <a href="./laptop2/laptop6.html" class="image-item"><img src="../images/Laptop/laptop6.jpg" alt="Laptop 6">Laptop Dell Inspiron 5430 N5430-i5P165W11SL2050 (Core i5-1340P | 16GB | 512GB | RTX 2050 4GB | 14.0 inch 2.5K | Win 11 | Bạc)</a>
+        </div>
+    </section>
+<footer class="footer">
+    <h3>Liên hệ:</h3>
+    <p>Số điện thoại: 0969707708  ||  Email: habengialoc@gmail.com  ||  <a href="#"><img src="../images/Facebook.png" alt="facebook logo" width="2%" height="2%"></a></p>
+</footer>
+</body>
+
+</html>

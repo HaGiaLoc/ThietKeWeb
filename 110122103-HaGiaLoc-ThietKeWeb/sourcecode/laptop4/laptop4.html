@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop 1</title>
+    <link rel="stylesheet" href="../laptop.css">
+</head>
+<body>
+    <header>
+        <a href="../trangchu.html">
+            <img src="../../images/Logo.png" alt="logo">
+        </a>
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Nhập từ khóa...">
+            <button class="search-button">Tìm kiếm</button>
+        </div>
+        <div class="login-container">
+            <button onclick="openModal()">
+                <img src="../../images/Login.jpg" alt="Login Icon">
+                Đăng Nhập
+            </button>
+        </div>
+    </header>
+    <!-- Thanh điều hướng -->
+    <nav>
+        <div class="dropdown">
+            <a href="#">DANH MỤC SẢN PHẨM</a>
+            <div class="dropdown-content">
+                <a href="./Laptop.html">Laptop</a>
+                <a href="#">Máy tính</a>
+                <a href="#">Phụ kiện máy tính</a>
+            </div>
+        </div>
+        <a href="#">CHĂM SÓC KHÁCH HÀNG</a>
+        <a href="#">LIÊN HỆ</a>
+        <a href="../gioHang.html">GIỎ HÀNG</a>
+    </nav>
+
+    <!-- Nút đăng nhập -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+             <!-- Đăng Nhập -->
+            <div class="form-section">
+                <h1>Đăng Nhập</h1>
+                <form>
+                    <label for="login-username">Tên tài khoản hoặc địa chỉ email*</label>
+                    <input type="text" id="login-username" name="login-username" required>
+                    
+                    <label for="login-password">Mật khẩu*</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                        
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="remember-me" name="remember-me">
+                        <label for="remember-me">Ghi nhớ mật khẩu</label>
+                    </div>
+                        
+                    <input type="submit" value="Đăng Nhập">
+                    <a href="#" class="forgot-password">Quên mật khẩu?</a>
+                </form>
+            </div>
+                
+            <!-- Đăng Ký -->
+            <div class="form-section">
+                <h1>Đăng Ký</h1>
+                <form>
+                    <label for="register-email">Địa chỉ email*</label>
+                    <input type="email" id="register-email" name="register-email" required>
+                        
+                    <label for="register-password">Mật khẩu*</label>
+                    <input type="password" id="register-password" name="register-password" required>
+                        
+                    <input type="submit" value="Đăng Ký">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../dangnhap.js"></script>
+
+<section class="product-detail">
+    <!-- Hình ảnh sản phẩm -->
+    <div class="product">
+        <h1>Laptop Acer Swift X SFX14-71G-78SY NX.KEVSV.006 (Core™ i7-13700H | 32GB | 1TB | RTX 4050 | 14.5 inch 2.8K OLED 120Hz | Win 11 | Xám)</h1>
+        <p>Lượt xem: <span id="visit-count">0</span></p>
+        <script src="./luotxem4.js"></script>
+
+        <div class="Laptop">
+            <div class="slideshow-container">
+                <div class="Slides">
+                    <div class="slide fade">
+                        <img src="../../images/Laptop 4/laptop4.jpg" alt="Góc 1">
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="../../images/Laptop 4/Goc1.jpg" alt="Góc 2">
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="../../images/Laptop 4/Goc2.jpg" alt="Góc 3">
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="../../images/Laptop 4/Goc3.jpg" alt="Góc 4">
+                    </div>
+
+                </div>
+            <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlides(1)">&#10095;</a>    
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+        <script src="../slides.js"></script>
+    </div>
+
+    <!-- Thông tin sản phẩm -->
+    <div class="detail">
+        <div class="price">
+            <p class="old-price">Giá chính hãng : <span class="original-price">42.990.000 VNĐ</span></p>
+            <p class="new-price">Giá khuyến mãi : 39.990.000 VNĐ</p>
+        </div>
+        <div class="info">
+            <p>
+                -CPU: Intel&reg; Core&trade; i7-13700H (2.40GHz up to 5.00GHz, 24MB Cache)
+                <br>
+                -Ram: 32GB LPDDR5 4800MHz (không nâng cấp được Ram)
+                <br>
+                -Ổ cứng: 1TB PCIe NVMe SED SSD
+                <br>
+                -VGA: NVIDIA&reg; GeForce RTX&trade; 4050 6GB GDDR6
+                <br>
+                -Display: 14.5inch 2.8K (WQXGA+, 2880x1800) OLED, 100%DCI-P3, 120Hz, 400nits, 100% Adobe,
+                <br>
+                -Pin: 76Wh
+                <br>
+                -Weight: 1.5 kg
+                <br>
+                -Color: Steel Gray (Xám)
+                <br>
+                -Tính năng: Đèn nền bàn phím, Bảo mật vân tay
+                <br>
+                -OS: Windows 11 Home bản quyền
+                <br>
+                -NPP: VS
+            </p>
+            <p><b>Bảo hành: </b>12 Tháng chính hãng Acer Việt Nam, gói bảo hành VIP 3S1</p>
+        </div>
+        <button onclick="addToCart('Laptop Acer Swift X SFX14-71G-78SY NX.KEVSV.006', 39990000)" class="cart">
+            <img src="../../images/Giỏ hàng.png" alt="">
+            Đặt hàng
+        </button>
+        <script src="../gioHang.js"></script>
+    </div>
+</section>
+<footer class="footer">
+    <h3>Liên hệ:</h3>
+    <p>Số điện thoại: 0969707708  ||  Email: habengialoc@gmail.com  ||  <a href="#"><img src="../../images/Facebook.png" alt="facebook logo" width="2%" height="2%"></a></p> 
+</footer>
+</body>
+</html>
